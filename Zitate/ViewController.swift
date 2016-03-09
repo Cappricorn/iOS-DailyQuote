@@ -24,8 +24,7 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var quoteLabel: UILabel!
-    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
     
     @IBAction func tappedButtonLeft(sender: AnyObject) {
         quote.previousQuote()
@@ -42,8 +41,7 @@ class ViewController: UIViewController {
     }
     
     func updateLabels() {
-        quoteLabel.text = "\"\(quote.parser.getQuote(quote.count).getQuote)\""
-        authorLabel.text = "- \(quote.parser.getQuote(quote.count).getAuthor) -"
+        textLabel.text = "\"\(quote.parser.getQuote(quote.count).getQuote)\"\n\n- \(quote.parser.getQuote(quote.count).getAuthor) -"
         quote.saveCurrentQuote(quote.count)
     }
 }

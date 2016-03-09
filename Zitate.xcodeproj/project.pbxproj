@@ -17,6 +17,8 @@
 		DAF817991C9069E200D69F96 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF817981C9069E200D69F96 /* Quote.swift */; };
 		DAF8179B1C906A3A00D69F96 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8179A1C906A3A00D69F96 /* QuoteManager.swift */; };
 		DAF8179D1C906A7E00D69F96 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8179C1C906A7E00D69F96 /* XMLParser.swift */; };
+		DAF817A01C907D2E00D69F96 /* quotationlist.xsd.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF8179E1C907D2E00D69F96 /* quotationlist.xsd.xml */; };
+		DAF817A11C907D2E00D69F96 /* quotes.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF8179F1C907D2E00D69F96 /* quotes.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		DAF817981C9069E200D69F96 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		DAF8179A1C906A3A00D69F96 /* QuoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 		DAF8179C1C906A7E00D69F96 /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		DAF8179E1C907D2E00D69F96 /* quotationlist.xsd.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = quotationlist.xsd.xml; path = "../../../Falsche Zitate/falsch zugeordnete Zitate/quotationlist.xsd.xml"; sourceTree = "<group>"; };
+		DAF8179F1C907D2E00D69F96 /* quotes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = quotes.xml; path = "../../../Falsche Zitate/falsch zugeordnete Zitate/quotes.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 		DAF817691C90698A00D69F96 /* Zitate */ = {
 			isa = PBXGroup;
 			children = (
+				DAF8179E1C907D2E00D69F96 /* quotationlist.xsd.xml */,
+				DAF8179F1C907D2E00D69F96 /* quotes.xml */,
 				DAF8176A1C90698A00D69F96 /* AppDelegate.swift */,
 				DAF8176C1C90698A00D69F96 /* ViewController.swift */,
 				DAF817981C9069E200D69F96 /* Quote.swift */,
@@ -242,6 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF817751C90698B00D69F96 /* LaunchScreen.storyboard in Resources */,
+				DAF817A01C907D2E00D69F96 /* quotationlist.xsd.xml in Resources */,
+				DAF817A11C907D2E00D69F96 /* quotes.xml in Resources */,
 				DAF817721C90698B00D69F96 /* Assets.xcassets in Resources */,
 				DAF817701C90698A00D69F96 /* Main.storyboard in Resources */,
 			);
@@ -499,6 +507,7 @@
 				DAF817911C90698B00D69F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAF817921C90698B00D69F96 /* Build configuration list for PBXNativeTarget "ZitateTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +516,7 @@
 				DAF817941C90698B00D69F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAF817951C90698B00D69F96 /* Build configuration list for PBXNativeTarget "ZitateUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +525,7 @@
 				DAF817971C90698B00D69F96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
