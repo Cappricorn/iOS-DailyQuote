@@ -9,17 +9,41 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var quote = QuoteManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            self.quote.getCurrentQuote()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.updateLabels()
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    
+    @IBAction func tappedButtonLeft(sender: AnyObject) {
+        quote.previousQuote()
+        updateLabels()
     }
-
-
+    
+    @IBAction func tappedButtonRight(sender: AnyObject) {
+        quote.nextQuote()
+        updateLabels()
+    }
+    
+    @IBAction func tappedButtonSettings(sender: AnyObject) {
+        print("open settings")
+    }
+    
+    func updateLabels() {
+        quoteLabel.text = "\"\(quote.parser.getQuote(quote.count).getQuote)\""
+        authorLabel.text = "- \(quote.parser.getQuote(quote.count).getAuthor) -"
+        quote.saveCurrentQuote(quote.count)
+    }
 }
-
