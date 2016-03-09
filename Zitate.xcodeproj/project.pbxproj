@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6B9D441C90B8BB0094428E /* quotationlist.xsd.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B9D421C90B8BB0094428E /* quotationlist.xsd.xml */; };
+		3B6B9D451C90B8BB0094428E /* quotes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B9D431C90B8BB0094428E /* quotes.xml */; };
 		DAF8176B1C90698A00D69F96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8176A1C90698A00D69F96 /* AppDelegate.swift */; };
 		DAF8176D1C90698A00D69F96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8176C1C90698A00D69F96 /* ViewController.swift */; };
 		DAF817701C90698A00D69F96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAF8176E1C90698A00D69F96 /* Main.storyboard */; };
@@ -17,8 +19,6 @@
 		DAF817991C9069E200D69F96 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF817981C9069E200D69F96 /* Quote.swift */; };
 		DAF8179B1C906A3A00D69F96 /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8179A1C906A3A00D69F96 /* QuoteManager.swift */; };
 		DAF8179D1C906A7E00D69F96 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF8179C1C906A7E00D69F96 /* XMLParser.swift */; };
-		DAF817A01C907D2E00D69F96 /* quotationlist.xsd.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF8179E1C907D2E00D69F96 /* quotationlist.xsd.xml */; };
-		DAF817A11C907D2E00D69F96 /* quotes.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF8179F1C907D2E00D69F96 /* quotes.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B6B9D421C90B8BB0094428E /* quotationlist.xsd.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = quotationlist.xsd.xml; sourceTree = "<group>"; };
+		3B6B9D431C90B8BB0094428E /* quotes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = quotes.xml; sourceTree = "<group>"; };
 		DAF817671C90698A00D69F96 /* Zitate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zitate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAF8176A1C90698A00D69F96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAF8176C1C90698A00D69F96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		DAF817981C9069E200D69F96 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		DAF8179A1C906A3A00D69F96 /* QuoteManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 		DAF8179C1C906A7E00D69F96 /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
-		DAF8179E1C907D2E00D69F96 /* quotationlist.xsd.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = quotationlist.xsd.xml; path = "../../../Falsche Zitate/falsch zugeordnete Zitate/quotationlist.xsd.xml"; sourceTree = "<group>"; };
-		DAF8179F1C907D2E00D69F96 /* quotes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = quotes.xml; path = "../../../Falsche Zitate/falsch zugeordnete Zitate/quotes.xml"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +107,11 @@
 		DAF817691C90698A00D69F96 /* Zitate */ = {
 			isa = PBXGroup;
 			children = (
-				DAF8179E1C907D2E00D69F96 /* quotationlist.xsd.xml */,
-				DAF8179F1C907D2E00D69F96 /* quotes.xml */,
 				DAF8176A1C90698A00D69F96 /* AppDelegate.swift */,
 				DAF8176C1C90698A00D69F96 /* ViewController.swift */,
 				DAF817981C9069E200D69F96 /* Quote.swift */,
+				3B6B9D421C90B8BB0094428E /* quotationlist.xsd.xml */,
+				3B6B9D431C90B8BB0094428E /* quotes.xml */,
 				DAF8179A1C906A3A00D69F96 /* QuoteManager.swift */,
 				DAF8179C1C906A7E00D69F96 /* XMLParser.swift */,
 				DAF8176E1C90698A00D69F96 /* Main.storyboard */,
@@ -248,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAF817751C90698B00D69F96 /* LaunchScreen.storyboard in Resources */,
-				DAF817A01C907D2E00D69F96 /* quotationlist.xsd.xml in Resources */,
-				DAF817A11C907D2E00D69F96 /* quotes.xml in Resources */,
+				3B6B9D441C90B8BB0094428E /* quotationlist.xsd.xml in Resources */,
+				3B6B9D451C90B8BB0094428E /* quotes.xml in Resources */,
 				DAF817721C90698B00D69F96 /* Assets.xcassets in Resources */,
 				DAF817701C90698A00D69F96 /* Main.storyboard in Resources */,
 			);
