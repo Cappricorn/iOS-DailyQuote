@@ -33,8 +33,7 @@
                                         <exclude reference="x7l-Md-uDx"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="82" y="30" width="430" height="589"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <exclude reference="0cd-gt-CWP"/>
                                         <include reference="x7l-Md-uDx"/>
@@ -44,7 +43,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TGd-lc-TAo">
                                 <rect key="frame" x="0.0" y="650" width="840" height="260"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjK-hs-053">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjK-hs-053">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="260"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SjK-hs-053" secondAttribute="height" multiplier="1:1" id="t3R-7r-52G"/>
@@ -64,7 +63,7 @@
                                             <action selector="tappedButtonLeft:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pmP-ix-25w"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fid-Yr-YF7">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fid-Yr-YF7">
                                         <rect key="frame" x="290" y="0.0" width="260" height="260"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fid-Yr-YF7" secondAttribute="height" multiplier="1:1" id="e4V-Au-73L"/>
@@ -84,7 +83,7 @@
                                             <action selector="tappedButtonSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPi-rm-d4K"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry9-28-RO1">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry9-28-RO1">
                                         <rect key="frame" x="580" y="0.0" width="260" height="260"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ry9-28-RO1" secondAttribute="height" multiplier="1:1" id="9Gc-vZ-5Li"/>
@@ -124,8 +123,7 @@
                                         <exclude reference="lz4-at-TAJ"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="91" y="35" width="417" height="579"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="lz4-at-TAJ"/>
                                     </mask>
