@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -213,6 +214,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aZp-U0-iFh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="R0A-Bd-1me">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="zFp-OO-jFC">
@@ -260,13 +262,13 @@
                                 <exclude reference="3Hk-5H-Mqm"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="qRj-oh-j4A"/>
                                 <exclude reference="1Ys-g9-ZjJ"/>
                                 <exclude reference="F4f-lv-CSg"/>
                                 <exclude reference="seE-xc-cEj"/>
                                 <exclude reference="Xor-Cc-Ttm"/>
                                 <exclude reference="gLV-M4-DVR"/>
                                 <exclude reference="rHp-3x-acl"/>
-                                <exclude reference="qRj-oh-j4A"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -275,13 +277,13 @@
                                 <include reference="3Hk-5H-Mqm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="qRj-oh-j4A"/>
                                 <include reference="1Ys-g9-ZjJ"/>
                                 <include reference="F4f-lv-CSg"/>
                                 <include reference="seE-xc-cEj"/>
                                 <include reference="Xor-Cc-Ttm"/>
                                 <include reference="gLV-M4-DVR"/>
                                 <include reference="rHp-3x-acl"/>
-                                <include reference="qRj-oh-j4A"/>
                             </mask>
                         </variation>
                     </view>
