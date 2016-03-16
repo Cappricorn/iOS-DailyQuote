@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -80,7 +81,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="tappedButtonSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WPi-rm-d4K"/>
+                                            <segue destination="S4v-RV-7SR" kind="show" id="Nwi-Tb-6fh"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry9-28-RO1">
@@ -202,6 +203,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="245" y="317.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jcj-QA-AJE">
+            <objects>
+                <viewController id="S4v-RV-7SR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wM8-gQ-E8p"/>
+                        <viewControllerLayoutGuide type="bottom" id="aZp-U0-iFh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R0A-Bd-1me">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="zFp-OO-jFC">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3Hk-5H-Mqm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="B5X-oc-xDl"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Settings" id="wC7-v6-rBe">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lNq-vo-IF7">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="v7r-55-vDa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B5X-oc-xDl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="B5X-oc-xDl"/>
+                                    </mask>
+                                </variation>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Hk-5H-Mqm" firstAttribute="top" secondItem="R0A-Bd-1me" secondAttribute="topMargin" id="1Ys-g9-ZjJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Hk-5H-Mqm" secondAttribute="trailing" constant="-20" id="F4f-lv-CSg"/>
+                            <constraint firstItem="zFp-OO-jFC" firstAttribute="top" secondItem="R0A-Bd-1me" secondAttribute="top" id="Xor-Cc-Ttm"/>
+                            <constraint firstAttribute="trailing" secondItem="zFp-OO-jFC" secondAttribute="trailing" id="gLV-M4-DVR"/>
+                            <constraint firstItem="aZp-U0-iFh" firstAttribute="top" secondItem="zFp-OO-jFC" secondAttribute="bottom" id="qRj-oh-j4A"/>
+                            <constraint firstItem="zFp-OO-jFC" firstAttribute="leading" secondItem="R0A-Bd-1me" secondAttribute="leading" id="rHp-3x-acl"/>
+                            <constraint firstItem="3Hk-5H-Mqm" firstAttribute="leading" secondItem="R0A-Bd-1me" secondAttribute="leadingMargin" constant="-20" id="seE-xc-cEj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zFp-OO-jFC"/>
+                                <exclude reference="3Hk-5H-Mqm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1Ys-g9-ZjJ"/>
+                                <exclude reference="F4f-lv-CSg"/>
+                                <exclude reference="seE-xc-cEj"/>
+                                <exclude reference="Xor-Cc-Ttm"/>
+                                <exclude reference="gLV-M4-DVR"/>
+                                <exclude reference="rHp-3x-acl"/>
+                                <exclude reference="qRj-oh-j4A"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="zFp-OO-jFC"/>
+                                <include reference="3Hk-5H-Mqm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Ys-g9-ZjJ"/>
+                                <include reference="F4f-lv-CSg"/>
+                                <include reference="seE-xc-cEj"/>
+                                <include reference="Xor-Cc-Ttm"/>
+                                <include reference="gLV-M4-DVR"/>
+                                <include reference="rHp-3x-acl"/>
+                                <include reference="qRj-oh-j4A"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tuj-7X-vn6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="317.25"/>
         </scene>
     </scenes>
     <resources>

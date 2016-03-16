@@ -36,10 +36,6 @@ class ViewController: UIViewController {
         updateLabels()
     }
     
-    @IBAction func tappedButtonSettings(sender: AnyObject) {
-        print("open settings")
-    }
-    
     func updateLabels() {
         textLabel.text = "\"\(quote.parser.getQuote(quote.count).getQuote)\"\n\n- \(quote.parser.getQuote(quote.count).getAuthor) -"
         quote.saveCurrentQuote(quote.count)
