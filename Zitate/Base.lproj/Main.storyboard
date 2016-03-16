@@ -220,10 +220,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="zFp-OO-jFC">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" backIndicatorImage="bg" translatesAutoresizingMaskIntoConstraints="NO" id="3Hk-5H-Mqm">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hk-5H-Mqm">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="B5X-oc-xDl"/>
+                                    <constraint firstAttribute="height" constant="60" id="oFd-rh-2mD"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="Settings" id="wC7-v6-rBe">
@@ -236,12 +236,13 @@
                                 </items>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="B5X-oc-xDl"/>
+                                        <exclude reference="oFd-rh-2mD"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular">
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <mask key="constraints">
-                                        <include reference="B5X-oc-xDl"/>
+                                        <include reference="oFd-rh-2mD"/>
                                     </mask>
                                 </variation>
                             </navigationBar>
