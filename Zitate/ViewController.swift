@@ -10,18 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var quote = QuoteManager()
+    var setting = Settings()
+    var quote = QuoteManager(Package: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
-        dispatch_async(dispatch_get_global_queue(priority, 0)) {
-            self.quote.getCurrentQuote()
-            dispatch_async(dispatch_get_main_queue()) {
-                self.updateLabels()
-            }
-        }
+        setting.getCurrentSettingsPackage()
+        quote = QuoteManager(Package: setting.choosedPackage)
+        viewWillBeOnScreen()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
     }
     
     @IBOutlet weak var textLabel: UILabel!
@@ -39,5 +38,15 @@ class ViewController: UIViewController {
     func updateLabels() {
         textLabel.text = "\"\(quote.parser.getQuote(quote.count).getQuote)\"\n\n- \(quote.parser.getQuote(quote.count).getAuthor) -"
         quote.saveCurrentQuote(quote.count)
+    }
+    
+    func viewWillBeOnScreen() {
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            self.quote.getCurrentQuote()
+            dispatch_async(dispatch_get_main_queue()) {
+                self.updateLabels()
+            }
+        }
     }
 }

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5FB3502412B86FD02F81097A6620BA755098B370",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A7AAFA822C85BBD8520C954DC2B71141715D261F" : 0,
+    "5FB3502412B86FD02F81097A6620BA755098B370" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "93B7CA3E-8B5C-4519-A5A1-5370AF31F9D9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A7AAFA822C85BBD8520C954DC2B71141715D261F" : "..\/Falsche%20Zitate",
+    "5FB3502412B86FD02F81097A6620BA755098B370" : "Zitate\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Zitate",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Zitate.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Paul312\/taeglichesZitat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5FB3502412B86FD02F81097A6620BA755098B370"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Paul312\/FalscheZitate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A7AAFA822C85BBD8520C954DC2B71141715D261F"
+    }
+  ]
+}

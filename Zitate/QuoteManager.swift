@@ -21,8 +21,8 @@ class QuoteManager: XMLParserDelegate {
         }
     }
     
-    init() {
-        let fileURL = bundleURL.URLByAppendingPathComponent("quotes.xml")
+    init(Package: Int) {
+        let fileURL = bundleURL.URLByAppendingPathComponent("quotes_\(Package).xml")
         parser = XMLParser(url: fileURL)
         parser.parse {
             //nothing
