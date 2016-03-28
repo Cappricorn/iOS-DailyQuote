@@ -21,8 +21,8 @@ class QuoteManager: XMLParserDelegate {
         }
     }
     
-    init(Package: Int) {
-        let fileURL = bundleURL.URLByAppendingPathComponent("quotes_\(Package).xml")
+    init(package: Int) {
+        let fileURL = bundleURL.URLByAppendingPathComponent("quotes_\(package).xml")
         parser = XMLParser(url: fileURL)
         parser.parse {
             //nothing
@@ -30,13 +30,13 @@ class QuoteManager: XMLParserDelegate {
     }
     
     func nextQuote() {
-        self.count++
+        self.count += 1
         count = outOfRange(count)
         saveCurrentQuote(count)
     }
     
     func previousQuote() {
-        self.count--
+        self.count -= 1
         count = outOfRange(count)
         saveCurrentQuote(count)
     }

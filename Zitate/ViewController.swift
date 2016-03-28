@@ -11,12 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     var setting = Settings()
-    var quote = QuoteManager(Package: 0)
+    var quote = QuoteManager(package: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setting.getCurrentSettingsPackage()
-        quote = QuoteManager(Package: setting.choosedPackage)
+        quote = QuoteManager(package: setting.choosedPackage)
         viewWillBeOnScreen()
     }
     
